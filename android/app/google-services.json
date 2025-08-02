@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "796361877332",
+    "project_id": "mangalore-guide-zyn",
+    "storage_bucket": "mangalore-guide-zyn.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796361877332:android:3c12de1baf8a5f8ea28ac1",
+        "android_client_info": {
+          "package_name": "com.example.local_guide_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwtIvDA-zF47Wpfrli8SyquZdtmfh_YeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796361877332:android:e4d6f0cf6eb851f6a28ac1",
+        "android_client_info": {
+          "package_name": "com.ziyan.mng_guide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwtIvDA-zF47Wpfrli8SyquZdtmfh_YeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

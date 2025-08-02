@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Someshwara Beach",
+    "image": "assets/images/someshwara.jpg",
+    "description": "Famous for the Rudra Shile (large rocks) and the ancient Somanatha Temple. It's a beautiful, clean beach, perfect for a peaceful walk. The view from the top of the rocks during sunset is unforgettable.",
+    "category": "Beaches",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Someshwara+Beach,Mangalore"
+  },
+  {
+    "id": 2,
+    "name": "Udupi Sri Krishna Matha",
+    "image": "assets/images/krishna_matha.jpg",
+    "description": "A world-renowned temple dedicated to Lord Krishna. The atmosphere here is deeply spiritual. Don't miss the unique Kanakana Kindi, a window through which Lord Krishna is said to have given darshan to his devotee, Kanakadasa.",
+    "category": "Religious place",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Udupi+Sri+Krishna+Matha"
+  },
+  {
+    "id": 3,
+    "name": "St. Mary's Islands",
+    "image": "assets/images/stmarys.jpg",
+    "description": "A geological monument known for its unique columnar basaltic lava formations. A short boat ride from Malpe harbor takes you to this stunning island. It feels like stepping into a different world.",
+    "category": "Beaches",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=St.+Mary's+Islands,Malpe"
+  },
+  {
+    "id": 4,
+    "name": "Forum Fiza Mall",
+    "image": "assets/images/forum.jpg",
+    "description": "A popular shopping destination in Mangalore with a wide range of retail stores, a food court, and a cinema. A great place to spend an afternoon.",
+    "category": "Malls",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Forum+Fiza+Mall,Mangalore"
+  },
+  {
+    "id": 5,
+    "name": "City Centre Mall",
+    "image": "assets/images/citycentre.jpg",
+    "description": "One of the largest malls in the region, offering a vast selection of brands, dining options, and entertainment facilities right in the heart of the city.",
+    "category": "Malls",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=City+Centre+Mall,Mangalore"
+  }
+]
