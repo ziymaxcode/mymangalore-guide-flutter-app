@@ -8,10 +8,10 @@ class EditPlacePage extends StatefulWidget {
   const EditPlacePage({super.key, required this.place});
 
   @override
-  _EditPlacePageState createState() => _EditPlacePageState();
+  EditPlacePageState createState() => EditPlacePageState();
 }
 
-class _EditPlacePageState extends State<EditPlacePage> {
+class EditPlacePageState extends State<EditPlacePage> {
   final _formKey = GlobalKey<FormState>();
   late TextEditingController _nameController;
   late TextEditingController _descriptionController;

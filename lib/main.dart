@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'add_place_page.dart';
+import 'edit_place_page.dart'; // Import the new edit page
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -97,7 +98,11 @@ class PlacesListPage extends StatelessWidget {
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: 12.0, mainAxisSpacing: 12.0, childAspectRatio: 0.8),
             itemCount: snapshot.data!.docs.length,
             itemBuilder: (context, index) {
-              final place = snapshot.data!.docs[index].data() as Map<String, dynamic>;
+              final doc = snapshot.data!.docs[index];
+              final place = doc.data() as Map<String, dynamic>;
+              // **CRUCIAL UPDATE**: Add the document ID to the map
+              place['id'] = doc.id;
+
               return PlaceCard(
                 place: place,
                 onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsPage(place: place))),
@@ -180,7 +185,24 @@ class DetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final imageUrl = place['image'] as String? ?? '';
     return Scaffold(
-      appBar: AppBar(title: Text(place["name"] ?? 'Details')),
+      appBar: AppBar(
+        title: Text(place["name"] ?? 'Details'),
+        // **NEW**: Add the Edit button to the AppBar
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.edit),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  // Navigate to the new EditPlacePage, passing the place data
+                  builder: (context) => EditPlacePage(place: place),
+                ),
+              );
+            },
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
